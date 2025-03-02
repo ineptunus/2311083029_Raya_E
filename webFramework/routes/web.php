@@ -172,5 +172,5 @@ Route::prefix('admin')->group(function() {
 
 //route fallback
 Route::fallback(function(){
-   return "<h2> Mohon maaf, halaman yang anda cari <b>tidak ditemukan</b>";
+  return response()->view('404', [], 404);
 });
